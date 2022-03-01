@@ -1,11 +1,84 @@
 body {
-  background: #1D976C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #C02425;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
 .logo {
   width: 30%;
+}
+#logo{
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+h4.card-title{
+  color:#EE5A24;
+  font-size: 20px;
+}
+
+div.card{
+  background: #8E0E00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+h6#sub{
+  color: #fed330;
+  font-size: 16px;
+  font-family: Verdana;
+}
+h5#s2{
+  color: #00a8ff;
+  font-family: Verdana;
+}
+p#tex{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: white;
+}
+p#tex2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #e056fd;
+}
+input.form-control::placeholder{
+  color: white;
+}
+input.form-control{
+  color: white;
+}
+textarea.form-control::placeholder{
+  color: white;
+}
+textarea.form-control{
+  color: white;
+}
+h3{
+  color:#EE5A24
+}
+input::content{
+  color: white;
+}
+option{
+ background-color: #ffa502;
+ color:black;
+}
+h1.h4{
+  color:#EE5A24
+}
+div.card-header{
+  color:#EE5A24;
+  font-size:18px;
+}
+p.lead{
+  color:white;
+}
+h1#wel{
+  color:white;
+}
+p#par{
+  color:black;
 }

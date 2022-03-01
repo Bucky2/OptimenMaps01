@@ -5,7 +5,7 @@ export const renderNoteForm = (req, res) => {
 };
 
 export const createNewNote = async (req, res) => {
-  const { title, description } = req.body;
+  const { title, description,comments,status,priority,pages,email} = req.body;
   const errors = [];
   if (!title) {
     errors.push({ text: "¡Porfavor escriba un Titulo" });
@@ -18,9 +18,14 @@ export const createNewNote = async (req, res) => {
       errors,
       title,
       description,
+      comments,
+      status,
+      priority,
+      pages,
+      email
     });
   } else {
-    const newNote = new Note({ title, description });
+    const newNote = new Note({ title, description,comments,status,priority,pages,email});
     newNote.user = req.user.id;
     await newNote.save();
     req.flash("success_msg", "La nota se ha agregado correctamente");
@@ -45,8 +50,8 @@ export const renderEditForm = async (req, res) => {
 };
 
 export const updateNote = async (req, res) => {
-  const { title, description } = req.body;
-  await Note.findByIdAndUpdate(req.params.id, { title, description });
+  const { title, description,comments,status,priority,pages,email} = req.body;
+  await Note.findByIdAndUpdate(req.params.id, { title, description,comments,status,priority,pages,email});
   req.flash("success_msg", "La nota se ha actualizado correctamente");
   res.redirect("/notes");
 };
