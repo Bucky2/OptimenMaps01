@@ -1,7 +1,7 @@
 body {
   background: #C02425;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ffffff, #064468); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
@@ -14,24 +14,24 @@ body {
 }
 
 h4.card-title{
-  color:#EE5A24;
+  color:#012503;
   font-size: 20px;
 }
 
 div.card{
   background: #8E0E00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #1f5f0e, #00798e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1f5f0e, #00798e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
 h6#sub{
-  color: #fed330;
+  color: #aa9e2e;
   font-size: 16px;
   font-family: Verdana;
 }
 h5#s2{
-  color: #00a8ff;
+  color: #0026ff;
   font-family: Verdana;
 }
 p#tex{
@@ -57,7 +57,7 @@ textarea.form-control{
   color: white;
 }
 h3{
-  color:#EE5A24
+  color:#2bee24
 }
 input::content{
   color: white;
@@ -82,3 +82,7 @@ h1#wel{
 p#par{
   color:black;
 }
+.carousel-item{
+transition: transform 0.1s ease, opacity 0.5s;
+}
+
