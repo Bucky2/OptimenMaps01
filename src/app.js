@@ -12,7 +12,7 @@ import { createAdminUser } from "./libs/createUser";
 import config from "./config";
 
 import indexRoutes from "./routes/index.routes";
-import notesRoutes from "./routes/notes.routes";
+import mapsRoutes from "./routes/maps.routes";
 import userRoutes from "./routes/users.routes";
 import "./config/passport";
 
@@ -62,7 +62,8 @@ app.use((req, res, next) => {
 // routes
 app.use(indexRoutes);
 app.use(userRoutes);
-app.use(notesRoutes);
+app.use(mapsRoutes);
+
 
 // static files
 app.use(express.static(path.join(__dirname, "public")));

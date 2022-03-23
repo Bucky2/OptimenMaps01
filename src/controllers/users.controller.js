@@ -40,7 +40,7 @@ export const singup = async (req, res) => {
 export const renderSigninForm = (req, res) => res.render("users/signin");
 
 export const signin = passport.authenticate("local", {
-  successRedirect: "/notes",
+  successRedirect: "/maps/indexMap",
   failureRedirect: "/users/signin",
   failureFlash: true,
 });
